@@ -144,7 +144,7 @@ namespace Kerbalism.Contracts
 
 			foreach(var vesselNode in node.GetNodes())
 			{
-				Guid id = Guid.Parse(vesselNode.name);
+				Guid id = new Guid(vesselNode.name);
 				var statesList = new List<RadiationFieldState>();
 				states[id] = statesList;
 
